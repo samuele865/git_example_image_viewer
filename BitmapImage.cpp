@@ -19,3 +19,6 @@ BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
 
+bool BitmapImage::resize(int witdth, int height) {
+
+}
