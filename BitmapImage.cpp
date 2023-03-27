@@ -20,5 +20,12 @@ BitmapImage::~BitmapImage() {
 }
 
 bool BitmapImage::resize(int witdth, int height) {
-
+    // check it is a supported image file
+    std::string fileExt = name.substr(name.find_last_of(".") + 1);
+    if ((fileExt == "jpg") || (fileExt == "png")) || (fileExt == "bmp"){
+        // load image file
+        // decompress into buffer
+        return true;
+    }
+    return false;
 }
